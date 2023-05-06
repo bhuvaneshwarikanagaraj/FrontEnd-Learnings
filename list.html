@@ -12,6 +12,7 @@
       content="This Page is dtart to my FrontEnd Journey"/>
     <title>My new Web Page</title>
     <link rel="icon" href="html-5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css">
   </head>
   <body>
 
@@ -30,6 +31,7 @@
         <li><a href="#Education Details">Education</a></li>
         <li><a href="#1">Favorite Food </a></li>
         <li><a href="#address">Address</a></li>
+        <li> <a href="#contact">Contact Form</a> </li>
       </ul>
     </nav>
   </header>
@@ -37,7 +39,6 @@
 
     <main>
   
-
     <h2>GENDRAL DETAILS</h2>   
     <ol>
       <li>Name :Bhuvaneshwari kanagaraj</li>
@@ -45,6 +46,16 @@
       <li>Father's name : Kanagaraj</li>
       <li>Mother's Name: Kala</li>
       <li>Total Number : 4</li>
+      <aside>
+        <details>
+          <summary>
+            guess the  <mark>number</mark> of Hour we spend together
+
+          </summary>
+          <p>We meet by <time datetime="18:00">8</time></p>
+          <!--Reading Optimization  -->
+        </details>
+      </aside>
     </ol>
 
     <hr />
@@ -117,19 +128,94 @@
             No 83 A, rabindranath Tagore Street,<br />
             Maniyakaram Palayam , Ganapathy post ,<br />
             Coimbatore - 641006<br />
-            Contac t :9876459863
+            Contact :9876459863
           </p>
         </ul>
       </address>
     </section>
     <hr />
+
+    <table>
+      <tr>
+        <td>
+          <time datetime="8:00">8:00</time>--<time datetime="11:00">1:00</time>
+        </td>
+        <td>
+          First Study Session
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <time datetime="12:00">2:00</time>--<time datetime="5:00">5:00</time>
+        </td>
+        <td>
+          First Study Session
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <time datetime="3:00">3:00</time>--<time datetime="5:00">5:00</time>
+        </td>
+        <td>
+          First Study Session
+        </td>
+      </tr>
+    </table>
+    <hr>
+
+
+    <article id ="contact">
+      <fieldset>
+        <legend>Prsonal Info</legend>
+
+
+     <h2>Contact me</h2>
+     <p>I really like to add it more from you</p>
+     <p>
+
+     <form action="https://httpbin.org/get" method="get"> 
+      <label for="firstname"> First Name:</label>
+      <input type="text" name="firstname " id ="firstname" placeholder="jane" autocomplete="on" required autofocus>
+
+    </p>
+
+    <p>
+        <label for="lastname"> Last Name:</label>
+        <input type="text" name=";lastname" id =" lastname" placeholder="deo" autocomplete="on" required>
+
+      </p>
+
+
+      <p>
+        <label for="password"> password:</label>
+        <input type="password" name="password" id ="password" placeholder="Eg:123@bhu" autocomplete="on" required>
+
+      </p>
+
+
+      <p>
+        <label for="phone">Phone Number :</label>
+        <input type="tel" name="phone Number" id ="phone" placeholder="333-333-3333" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+      </p>
+
+
+
+      <p>
+        <label for="decade">Decade :</label>
+        <input type="number" name="decade" id ="decade" min="1950" max="2023" step="10" value="1980">
+      </p>
+
+    </fieldset>
+    </form>
+    </article>
+    <hr>
+
   </main>
   <footer>
 
     &lt;&lt;&lt; &copy;
     <a href="about.html">Bhuvaneshwari Kanagaraj</a> &gt;&gt;&gt;
     <br>
-
       <a href="#Top">Back to top</a>
     </foote r>
   </body>
